@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #22272e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.main {
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px; 
+}
+
+.logo {
+    max-width: 227px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin: 24px 0;
+}
+
+.form label {
+    color: white;
+    font-size: 1.35rem;
+}
+
+.input {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.botao {
+    width: 100%;
+    height: 40px;
+    background-color: #119cea;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.resultado {
+    background-color: rgb(3, 157, 3);
+    max-width: 520px;
+    padding: 20px 28px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    user-select: none;
+    transition: transform 0.8s;
+}
+
+.resultado span {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.resultado:hover {
+    transform: scale(1.1);
+}
+
+#texto-resultado {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info {
+    position: fixed;
+    right: 14px;
+    bottom: 22px;
+}
+
+.info-img {
+    width: 66px;
+    height: 66px;
+}
+
+.texto-calc {
+    color: white;
+    background-color: black;
+    padding: 10px 8px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 28px;
+    display: none;
+}
+
+.info:hover .texto-calc {
+    display: inline;
+}
