@@ -26,6 +26,8 @@ body {
 
 .logo {
     max-width: 227px;
+    display: block;
+    margin: auto;
 }
 
 .titulo {
@@ -75,6 +77,10 @@ body {
     transition: transform 0.8s;
 }
 
+.hide {
+    display: none;
+}
+
 .resultado span {
     color: white;
     margin-bottom: 12px;
@@ -112,4 +118,33 @@ body {
 
 .info:hover .texto-calc {
     display: inline;
+}
+
+.sobre {
+    max-width: 624px;
+    background-color: #242424;
+    padding: 24px 14px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+}
+
+.sobre p {
+    color: white;
+    margin-bottom: 15px;
+    line-height: 150%;
+}
+
+.button-calcular {
+    background-color: blue;
+    width: 70%;
+    height: 48px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
